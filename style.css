@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+a:link,
+a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    width: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section,
+p,
+span {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-image: url(/images/hero/main-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.header-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+ul {
+    display: flex;
+}
+ li {
+    margin-left:27px;
+    
+}
+li:first-child {
+    margin-right: 70px;
+}
+
+ul li a {
+    color:#000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul li a:hover {
+    color: burlywood;
+}
+
+.logo a {
+    width: 50px;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column;
+    color: #000;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-text h1 {
+    font-size: 8rem;
+    color: #BA704F;
+    font-weight: 100;
+    font-family: 'Just Another Hand', 'cursive';
+
+}
+
+.header-text h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.menu-btn {
+    display: inline-block;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    display: none;
+}
+
+.header-btn {
+    display: block;
+    background-color: #BA704F;
+    color: #fff;
+    padding: 10px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.header-btn::after {
+    content: 'Buy';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #6C3428;
+    transition: .5s;
+}
+
+.header-btn:hover::after {
+    top: 0;
+}
+
+/* About  */
+
+.about {
+    margin-bottom: 150px;
+}
+
+.about-title {
+    margin: 60px 0;
+}
+
+.about-title h2 {
+    width: 100%;
+    text-align: center;
+    color: #BA704F;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.about-title h2::after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #6C3428;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.about-img {
+    width: 40%;
+    
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 40%;
+}
+
+h4 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Just Another Hand', 'cursive';
+    color: #BA704F;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+    
+}
+
+#asteriks {
+    color: #6C3428;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 15px;
+    text-align: center;
+    color: #333;
+}
+
+
+/* Galery */
+
+.galery {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.galery-item {
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.galery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #6C3428;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s
+    ;
+}
+
+.galery-item:hover .overlay {
+    top: 0;
+}
+
+.menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.menu-img {
+    width: 40%;
+    
+}
+
+.menu-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-text {
+    width: 40%;
+}
+
+.menu-lead {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Just Another Hand', 'cursive';
+    color: #BA704F;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+    
+}
+
+#asteriks {
+    color: #6C3428;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.contact h2 {
+    width: 100%;
+    text-align: center;
+    color: #BA704F;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact {
+    padding: 10px 0;
+}
+
+.contact h2::after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #6C3428;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-element {
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    flex-direction: column;
+    margin-bottom: 100px;
+    text-align: center;
+
+}
+
+.contact-element i {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #6C3428;
+}
+
+.contact-content p {
+    font-size: 14px;
+    line-height: 33px;
+}
+
+.footer {
+    background: #000;
+    padding: 60px;
+    
+}
+
+.footer h2 {
+    width: 100%;
+    text-align: center;
+    color: #BA704F;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.footer h2::after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #6C3428;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+    margin: 30px 0;
+    
+}
+.footer p span {
+    color: #BA704F;
+}
+
+.footer-social {
+   
+    text-align: center;
+    
+
+}
+
+.footer-social a {
+    margin-right: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.footer-social a:hover  {
+    color: #BA704F;
+}
+
+#menu-icon {
+    font-size: 25px;
+    display: none;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width:800px) {
+    .navbar-menu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color:#6C3428;
+        width: 100%;
+        overflow: hidden;
+        transition: maxheight .5s;
+        
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .navbar-menu ul li {
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .navbar-menu a {
+        color: #fff;
+    } 
+
+    
+}
+
+@media only screen and (max-width:990px) {
+    .about-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .menu-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .menu-text {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:960px) {
+    .galery .galery-item {
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width:960px) {
+    .galery .galery-item {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+     .contact-content {
+      
+        flex-direction: column;
+    }
+    .contact-element {
+        margin-top: 30px;
+    }
+
+    .contact-element p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
